@@ -174,6 +174,9 @@ body {
   text-decoration: none;
   line-height: 66px;
 }
+.main-nav li a:hover {
+  color: #ff0000;
+}
 
 /* ===== Main ===== */
 
@@ -214,6 +217,11 @@ h1 {
   margin: 0 auto;
 }
 
+.learn-more:hover {
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  border: 1x solid #ff0000;
+}
+
 /* ===== Articles ===== */
 .articles {
   background: #ffffff; /* Old browsers */
@@ -246,7 +254,8 @@ article {
   padding-top: 60px;
 }
 
-.articles > .wrapper:after {
+.articles > .wrapper:after,
+.page-footer > .wrapper:after {
   content: '.';
   font-size: 0;
   height: 1px;
@@ -288,4 +297,65 @@ h2::after {
 .text {
   font-weight: 300;
   margin-bottom: 60px;
+}
+
+/* ===== Footer ===== */
+
+.page-footer {
+  background: #111111;
+  padding-top: 25px;
+}
+
+.footer-col {
+  width: 25%;
+  float: left;
+}
+
+.page-footer h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.page-footer h3::after {
+  content: '.';
+  font-size: 0;
+  height: 1px;
+  width: 90%;
+  background: #292929;
+  display: block;
+  margin: 15px 0;
+}
+
+.page-footer li {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+}
+.page-footer li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.copy {
+  color: #585858;
+  margin-top: 32px;
+}
+
+.social li {
+  display: inline-block;
+}
+.social a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  line-height: 44px;
+}
+
+.social a:hover {
+  background: #fff;
+  color: #ff0000;
 }
